@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: atmos-dining/ropponmatsugoen-site
+  name: git-gateway
   branch: main
-  site_domain: splendorous-dodol-af4a43.netlify.app
 
 media_folder: images
 public_folder: /images
