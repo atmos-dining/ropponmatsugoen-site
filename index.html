@@ -24,7 +24,7 @@
 
 <link rel="stylesheet" href="./style.css">
 
-<!-- 構造化データ -->
+<!-- 構造化データ：Restaurant -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,8 +33,17 @@
   "image": "https://ropponmatsu-goen.com/images/space-ropponmatsugoen.jpg",
   "url": "https://ropponmatsu-goen.com/",
   "telephone": "092-715-7750",
-  "servesCuisine": ["居酒屋","海鮮","もつ鍋"],
+  "servesCuisine": ["居酒屋","海鮮","もつ鍋","唐揚げ","焼酎"],
   "priceRange": "￥￥",
+  "hasMenu": "https://ropponmatsu-goen.com/menu.html",
+  "reservationUrl": "https://yoyaku.toreta.in/6goen/#/",
+  "acceptsReservations": true,
+  "currenciesAccepted": "JPY",
+  "paymentAccepted": "現金, クレジットカード, QRコード決済",
+  "publicAccess": true,
+  "smokingAllowed": false,
+  "hasMap": "https://maps.google.com/maps?q=大衆酒場+六本松ごえん+福岡市中央区六本松2-5-9",
+  "sameAs": ["https://www.instagram.com/goen_ropponmatsu/"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "六本松2-5-9",
@@ -49,6 +58,80 @@
     "opens": "17:00",
     "closes": "24:00"
   }]
+}
+</script>
+
+<!-- 構造化データ：FAQ（AEO対策） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "六本松ごえんの営業時間は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "毎日17時〜24時営業しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "六本松ごえんはどこにありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "福岡市中央区六本松2-5-9にあります。地下鉄七隈線・六本松駅から徒歩圏内です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "予約はできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、ネット予約（https://yoyaku.toreta.in/6goen/#/）またはお電話（092-715-7750）にてご予約いただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "貸切はできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "45名様より貸切が可能です。最大55名様まで対応しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "駐車場はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "申し訳ございませんが、専用駐車場のご用意はございません。近隣のコインパーキングをご利用ください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "焼酎のボトルキープはできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、焼酎ボトルキープを1,500円〜ご用意しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "何名まで入れますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "カウンター・掘りごたつ・お座敷を合わせて最大72席ございます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "支払い方法は何が使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "現金・クレジットカード・QRコード決済（PayPayほか）に対応しています。"
+      }
+    }
+  ]
 }
 </script>
 
