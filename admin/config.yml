@@ -2,8 +2,7 @@ backend:
   name: github
   repo: atmos-dining/ropponmatsugoen-site
   branch: main
-  auth_type: pkce
-  app_id: Ov23liCY31EnaQCgwLx9
+  site_domain: splendorous-dodol-af4a43.netlify.app
 
 media_folder: images
 public_folder: /images
