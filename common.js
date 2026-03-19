@@ -136,12 +136,13 @@
         }
 
         // bottom.html内のセクション（#access, #reserveなど）へのハッシュスクロール対応
+        // ヘッダーのfetchも含めレイアウト確定後にスクロール
         const hash = location.hash;
         if (hash) {
-          const target = document.querySelector(hash);
-          if (target) {
-            setTimeout(() => target.scrollIntoView({ behavior: 'smooth' }), 100);
-          }
+          setTimeout(() => {
+            const target = document.querySelector(hash);
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+          }, 400);
         }
       })
       .catch(() => {});
