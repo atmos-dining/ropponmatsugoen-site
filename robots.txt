@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ropponmatsu-goen.com/sitemap.xml
