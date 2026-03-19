@@ -1041,6 +1041,14 @@ body:not(.is-home) main{
   color: #666;
   margin: 0 0 40px;
 }
+.drink-bottlekeep{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 0.05em;
+}
 
 .menu-feature-image,
 .drink-feature-image{
