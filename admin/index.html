@@ -6,52 +6,6 @@
   <title>ブログ管理画面｜六本松ごえん</title>
 </head>
 <body>
-  <!-- data-decap-cms-manual-init で自動初期化を止め、JS で設定を渡す -->
-  <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.10.1/dist/decap-cms.js" data-decap-cms-manual-init></script>
-  <script>
-  CMS.init({
-    config: {
-      load_config_file: false,
-      backend: {
-        name: 'github',
-        repo: 'atmos-dining/ropponmatsugoen-site',
-        branch: 'main',
-        auth_type: 'pkce',
-        app_id: 'Ov23liCY31EnaQCgwLx9'
-      },
-      media_folder: 'images',
-      public_folder: '/images',
-      collections: [
-        {
-          name: 'blog',
-          label: 'Blog Posts',
-          files: [
-            {
-              name: 'posts',
-              label: 'All Posts',
-              file: 'blog/posts.json',
-              fields: [
-                {
-                  name: 'posts',
-                  label: 'Posts',
-                  widget: 'list',
-                  fields: [
-                    { name: 'slug',    label: 'Slug',    widget: 'string' },
-                    { name: 'title',   label: 'Title',   widget: 'string' },
-                    { name: 'date',    label: 'Date',    widget: 'datetime', format: 'YYYY-MM-DD', time_format: false },
-                    { name: 'excerpt', label: 'Excerpt', widget: 'text' },
-                    { name: 'image',   label: 'Image',   widget: 'image', required: false },
-                    { name: 'tags',    label: 'Tags',    widget: 'list' },
-                    { name: 'body',    label: 'Body',    widget: 'markdown' }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  });
-  </script>
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </body>
 </html>
