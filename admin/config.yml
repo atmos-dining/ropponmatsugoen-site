@@ -5,44 +5,25 @@ backend:
   auth_type: pkce
   app_id: Ov23liCY31EnaQCgwLx9
 
-locale: ja
-
 media_folder: images
 public_folder: /images
 
 collections:
   - name: blog
-    label: ブログ記事
+    label: Blog Posts
     files:
-      - label: ブログ記事一覧
-        name: posts
+      - name: posts
+        label: All Posts
         file: blog/posts.json
         fields:
           - name: posts
-            label: 記事一覧
+            label: Posts
             widget: list
             fields:
-              - label: "スラッグ（URL用）"
-                name: slug
-                widget: string
-              - label: "タイトル"
-                name: title
-                widget: string
-              - label: "日付"
-                name: date
-                widget: datetime
-                format: "YYYY-MM-DD"
-                time_format: false
-              - label: "抜粋"
-                name: excerpt
-                widget: text
-              - label: "アイキャッチ画像"
-                name: image
-                widget: image
-                required: false
-              - label: "タグ"
-                name: tags
-                widget: list
-              - label: "本文"
-                name: body
-                widget: markdown
+              - {name: slug, label: Slug, widget: string}
+              - {name: title, label: Title, widget: string}
+              - {name: date, label: Date, widget: datetime, format: "YYYY-MM-DD", time_format: false}
+              - {name: excerpt, label: Excerpt, widget: text}
+              - {name: image, label: Image, widget: image, required: false}
+              - {name: tags, label: Tags, widget: list}
+              - {name: body, label: Body, widget: markdown}
