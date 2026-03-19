@@ -105,7 +105,7 @@
 
     const res = await fetch('./posts.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('posts.jsonが読み込めません（' + res.status + '）');
-    const posts = await res.json();
+    const posts = (await res.json()).posts;
     if (!Array.isArray(posts)) throw new Error('posts.jsonの形式が不正です');
 
     posts.sort((a, b) => String(b.date||'').localeCompare(String(a.date||'')));

@@ -1,0 +1,53 @@
+backend:
+  name: github
+  repo: atmos-dining/ropponmatsugoen-site
+  branch: main
+  auth_type: pkce
+  app_id: REPLACE_WITH_YOUR_CLIENT_ID
+
+locale: ja
+
+media_folder: images
+public_folder: /images
+
+collections:
+  - name: blog
+    label: ブログ記事
+    files:
+      - label: ブログ記事一覧
+        name: posts
+        file: blog/posts.json
+        fields:
+          - name: posts
+            label: 記事一覧
+            widget: list
+            fields:
+              - label: スラッグ（URL用）
+                name: slug
+                widget: string
+                hint: "例: 2026-03-19-sample（半角英数字とハイフンのみ）"
+              - label: タイトル
+                name: title
+                widget: string
+              - label: 日付
+                name: date
+                widget: datetime
+                format: "YYYY-MM-DD"
+                time_format: false
+                date_format: "YYYY-MM-DD"
+              - label: 抜粋（一覧に表示される説明文）
+                name: excerpt
+                widget: text
+              - label: アイキャッチ画像
+                name: image
+                widget: image
+                allow_multiple: false
+                required: false
+              - label: タグ
+                name: tags
+                widget: list
+                allow_add: true
+                hint: "例: ブログ / お知らせ"
+              - label: 本文
+                name: body
+                widget: markdown

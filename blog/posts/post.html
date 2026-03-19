@@ -152,13 +152,13 @@
   try {
     const res = await fetch('../posts.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('posts.json 読み込みエラー');
-    const posts = await res.json();
+    const posts = (await res.json()).posts;
 
     const post = posts.find(p => p.slug === slug);
     if (!post) throw new Error('記事が見つかりません: ' + slug);
 
     // title / meta更新
-    document.title = `${post.title}｜食堂 西のうめぼし`;
+    document.title = `${post.title}｜大衆酒場 六本松ごえん`;
     document.querySelector('meta[name="description"]')
       ?.setAttribute('content', post.excerpt || '');
     if (bcTitle) bcTitle.textContent = post.title;
