@@ -3,7 +3,7 @@ backend:
   repo: atmos-dining/ropponmatsugoen-site
   branch: main
   auth_type: pkce
-  app_id: REPLACE_WITH_YOUR_CLIENT_ID
+  app_id: Ov23liCY31EnaQCgwLx9
 
 locale: ja
 
