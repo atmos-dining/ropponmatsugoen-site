@@ -433,6 +433,20 @@ body:not(.is-home) .section{
   text-shadow: 0 1px 10px rgba(0,0,0,0.45);
 }
 
+.hero-bottlekeep{
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 8px 20px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+}
+
 .hero-actions{
   display: flex;
   flex-wrap: wrap;
