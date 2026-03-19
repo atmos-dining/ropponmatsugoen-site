@@ -432,7 +432,8 @@
 
   fetch('./blog/posts.json', { cache: 'no-store' })
     .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-    .then(posts => {
+    .then(data => {
+      const posts = data.posts ?? data;
       if (!Array.isArray(posts)) throw new Error();
       posts.sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')));
       const top3 = posts.slice(0, 3);
