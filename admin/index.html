@@ -12,10 +12,11 @@
     CMS.init({
       config: {
         backend: {
-          name: 'git-gateway',
+          name: 'github',
+          repo: 'atmos-dining/ropponmatsugoen-site',
           branch: 'main',
-          identity_url: 'https://splendorous-dodol-af4a43.netlify.app/.netlify/identity',
-          gateway_url: 'https://splendorous-dodol-af4a43.netlify.app/.netlify/git'
+          auth_type: 'pkce',
+          app_id: 'Ov23liCY31EnaQCgwLx9'
         },
         media_folder: 'images',
         public_folder: '/images',
