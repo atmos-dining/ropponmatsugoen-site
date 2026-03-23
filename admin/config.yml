@@ -2,8 +2,7 @@ backend:
   name: github
   repo: atmos-dining/ropponmatsugoen-site
   branch: main
-  auth_type: pkce
-  app_id: Ov23liCY31EnaQCgwLx9
+  base_url: https://sveltia-cms-auth.atmos-nextgen-team.workers.dev
 
 media_folder: images
 public_folder: /images
