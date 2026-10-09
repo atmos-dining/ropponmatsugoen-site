@@ -581,8 +581,20 @@ body:not(.is-home) .section{
 
 .course-grid{
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+}
+
+.course-variant{
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 14px 0 6px;
+}
+
+.course-note-center{
+  text-align: center;
+  margin-top: 18px;
 }
 
 /* タブレット */
