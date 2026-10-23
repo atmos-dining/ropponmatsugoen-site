@@ -147,6 +147,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://ropponmatsu-goen.com/">
+<script src="vendor/blog-security.js"></script>
 </head>
 
 <body class="is-home" data-page="home">
@@ -430,7 +431,7 @@
       grid.innerHTML = '';
       top3.forEach(p => {
         const img = p.image ? String(p.image).replace(/^\.\//, './blog/') : '';
-        const bg  = img ? `background-image:url('${esc(img)}');` : '';
+        const bg  = img ? `background-image:url('${esc(BlogSecurity.imageURL(img))}');` : '';
         const el  = document.createElement('article');
         el.className = 'blog-card';
         el.innerHTML = `
